@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Danivora</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.container {
+			width: 90%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+		label {
+			margin-bottom: 10px;
+		}
+		input, textarea {
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 align="center"> Get Answers Straight Into Your Inbox</h1>
+		
+		<form data-netlify="true" 
+			data-netlify-redirect="https://i.postimg.cc/zBjZmF2W/IMG-20240817-WA0011-1.png" data-netlify-honeypot="bot-field" name="Danivora" method="POST" action="/api/v1/forms/contact-form">
+			<label>First Name:</label>
+			<input type="text" name="firstname" required><br><br>		
+			<label>Email Address:</label>
+			<input type="email" name="email" required><br><br>
+			<textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea><br><br>		
+		<input type="submit" value="Get Answers">
+			<input type="hidden" name="_captcha" value="false">
+		</form>
+	</div>
+</body>
+</html>
